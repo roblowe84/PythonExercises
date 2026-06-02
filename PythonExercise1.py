@@ -8,6 +8,11 @@ Question 1:
 def printHelloWorld():
   print("Hello, world!");
 
+def printintegercalculation():
+  integer_start = 10;
+  result = (integer_start + 3)*2 -4 - 2*integer_start + 3;
+  print(result);
+
 '''
 Question 2: 
  
@@ -16,8 +21,11 @@ Question 2:
  Call this function from the main to test your program.
 '''
 
-def printXTenTimes():
-  print(str(3));
+def printXTenTimes(x,end):
+  print(x)
+  if x < end:
+    printXTenTimes(x+1,end); 
+  
 
 '''
 Question 3: 
@@ -75,9 +83,9 @@ def volumeOfACylinder():
 
 print("Question 1\n");
 printHelloWorld();
-
+printintegercalculation()
 print("\nQuestion 2\n");
-printXTenTimes();
+printXTenTimes(5,15);
 
 print("\nQuestion 3\n");
 convertMetricToImperialHeights();
